@@ -6,6 +6,8 @@ module Api
         short = Shortener.create!(url: params['url_origin'], counter: 0, alexa_rank: alexa)
 
         render json: short
+      rescue
+        render json: { error: 'URL no cumple' }, status: 404
       end
 
       def show

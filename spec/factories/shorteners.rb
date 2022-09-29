@@ -1,8 +1,8 @@
 FactoryBot.define do
   factory :shortener do
-    url { "MyString" }
-    short_code { "MyString" }
-    alexa_rank { 1 }
+    url { Faker::Internet.url }
+    short_code { '234567' }
+    alexa_rank { 14 }
     counter { 1 }
   end
 end

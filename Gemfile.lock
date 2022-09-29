@@ -199,7 +199,7 @@ DEPENDENCIES
   listen (~> 3.3)
   mime-types (~> 3.4, >= 3.4.1)
   nokogiri
-  pg
+  pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 6.1.7)
   rest-client
